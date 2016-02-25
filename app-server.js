@@ -11,7 +11,6 @@ import routes from './routes'
 const app = express()
 app.engine('html', hogan)
 app.set('views', __dirname + '/views')
-app.use('/', express.static(__dirname + '/public/'))
 app.set('port', (process.env.PORT || 8003))
 app.use(favicon(__dirname + '/public/img/about-bg.jpg'));
 
